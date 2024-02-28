@@ -1,0 +1,14 @@
+.asidecontainer{
+    background-color: rgb(166, 225, 168);
+    height: auto;
+    max-width: 800px;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.asidecontainer h2{
+    text-align: center;
+}

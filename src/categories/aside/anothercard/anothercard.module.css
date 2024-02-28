@@ -1,0 +1,11 @@
+.anothercard{
+    background-color: rgb(236, 96, 89);
+    max-width: 800px;
+    width: 100%;
+    
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+    margin: 10px auto;
+
+}

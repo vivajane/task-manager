@@ -1,4 +1,5 @@
-import Card from "../cards";
+
+import Categories from "../categories/categorycontent";
 import TaskList from "../tasklist";
 
 
@@ -6,7 +7,7 @@ import TaskList from "../tasklist";
 const Home = () => {
     return (
         <>
-        <Card></Card>
+        <Categories></Categories>
         <TaskList/>
         </>
     )
