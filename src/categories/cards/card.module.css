@@ -2,6 +2,9 @@
     background-color: rgb(236, 96, 89);
     max-width: 1800px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     text-align: center;
     padding: 15px;

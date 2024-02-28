@@ -1,7 +1,8 @@
 import styles from "./anothercard.module.css"
-const AnotherCard = function ({children}) {
-    return <div className={styles.anothercard}>{children}
-    </div>
+const AnotherCard = function ({variant, children}) {
+    return <div data-variant = {variant} className={styles.anothercard}> {children}</div>
 }
 
+    
+   
 export default AnotherCard;
