@@ -1,0 +1,17 @@
+.CardWrapper > li{
+    display: flex;
+}
+ul > li{
+    background-color: rgb(236, 96, 89);
+    max-width: 1800px;
+    list-style: none;
+    text-align: center;
+   
+    
+}
+li{
+    padding: 15px;
+    margin: 30px;
+    cursor: pointer;
+
+}

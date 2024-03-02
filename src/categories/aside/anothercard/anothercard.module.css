@@ -5,8 +5,9 @@
     border-radius: 10px;
     cursor: pointer;
     
+    
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     color: black;
     margin-top: 10px;
     margin: 10px auto;
@@ -23,4 +24,5 @@
 }
 .anothercard[data-variant ="highschool"]{
     background-color: rgb(225, 54, 45);
+    
 }

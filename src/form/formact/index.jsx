@@ -11,6 +11,13 @@ const FormAction = () => {
 
 export const Form = () => {
     const[formState, setFormState] = useState({})
+    const [formSubmit, setFormSubmit] = useState({})
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        setFormState(formState);
+
+    }
     const onChangeHandler = (e)  => {
         const name = e?.target?.name;
         const value = e?.target?.value;
@@ -18,10 +25,11 @@ export const Form = () => {
             ...prev,
             [name] :value,
         }));
+        console.log(value);
         
 
     };
-    return <form className={styles.formaction}>
+    return <form  onSubmit = {submitHandler}className={styles.formaction}>
         <TextField  value= {formState.item} name ="item" onChangeHandler = {onChangeHandler}id="item" placeholder="Add Task"/>
         <ButtonForm/>
 
