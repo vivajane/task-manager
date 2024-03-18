@@ -1,0 +1,71 @@
+
+.section{
+    background-color: bisque;
+    border-radius: 10px;
+    width: 800px;
+    margin: 10px auto;
+   
+   
+}
+ul{
+   
+    margin: 10px auto;
+}
+li{
+    background-color: rgb(205, 151, 255);
+    margin: 20px auto;
+    list-style-type: none;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+}
+ul li.checked {
+    background: rgb(252, 187, 200);
+    color: #000000;
+}
+form{
+    /* display: flex; */
+    margin: 20px auto;
+    width: 800px;
+    background-color: rgb(194, 218, 210);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.btn{
+    display: flex;
+}
+.btntwo{
+    background-color: rgb(182, 239, 239);
+
+}
+.btnspan{
+    display: flex;
+    justify-content: center;
+
+}
+
+header input, select, button{
+    width: 70%;
+    margin: 4px auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+
+   
+}
+header input{
+    font-size: 20px;
+}
+
+
+button{
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+ul :hover{
+    transform-origin: 20px;
+    background-color: green;
+
+}
