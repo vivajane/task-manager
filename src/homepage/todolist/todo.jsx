@@ -55,7 +55,7 @@ const Todo = function({Fact, setFact}){
             {
                 Fact.map((category, index) => {
                     return <li  style={{display: "flex", justifyContent: "space-between", alignItems: "center"}} key={category.id}>
-                        <p>{category.name}</p>
+                    <p>{category.name}</p>
                     <span style={{margin: "3px",border: "1px solid black", padding: "10px"}}>{category.description}</span>
                     <span style={{margin: "4px" , border: "1px solid black", padding: "10px"}}>{category.date}</span>
                     <div style ={{padding: "10px"}} >
@@ -81,6 +81,7 @@ export const Header = function({setFact, setShowModal}){
     const [formValuesTwo, setFormValuesTwo] = useState("");
     const newCount = formValues.length;
 
+
     const onSubmitHandler = (e) => {
         e.preventDefault();
         // console.log(formValues, formValuesOne, formValuesTwo)
@@ -92,9 +93,9 @@ export const Header = function({setFact, setShowModal}){
         else {
         const newValues = {
             id: Math.round(Math.random() * 10000000),
-            formValues,
-            formValuesOne,
-            formValuesTwo,
+            name : formValues,
+            description : formValuesOne,
+            date : formValuesTwo,
         }
         setFact((Fact) => [newValues, ...Fact])
         setFormValues("");
