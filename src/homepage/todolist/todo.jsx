@@ -95,9 +95,9 @@ export const Header = function({setFact, setShowModal}){
             id: Math.round(Math.random() * 10000000),
             name : formValues,
             description : formValuesOne,
-            date : formValuesTwo,
+            date :formValuesTwo,
         }
-        setFact((Fact) => [newValues, ...Fact])
+        setFact((prev) => [newValues, ...prev])
         setFormValues("");
         setFormValuesOne("");
         setFormValuesTwo("");

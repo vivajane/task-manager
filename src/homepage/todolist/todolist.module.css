@@ -2,7 +2,7 @@
 .section{
     background-color: bisque;
     border-radius: 10px;
-    width: 800px;
+    width: 50%;
     margin: 10px auto;
    
    
@@ -10,6 +10,7 @@
 ul{
    
     margin: 10px auto;
+    text-align: center;
 }
 li{
     background-color: rgb(205, 151, 255);
@@ -17,7 +18,7 @@ li{
     list-style-type: none;
     padding: 5px;
     border-radius: 10px;
-    width: 80%;
+    /* width: 100%; */
 }
 ul li.checked {
     background: rgb(252, 187, 200);
@@ -26,7 +27,7 @@ ul li.checked {
 form{
     /* display: flex; */
     margin: 20px auto;
-    width: 800px;
+    width: 90%;
     background-color: rgb(194, 218, 210);
     padding: 20px;
     border-radius: 10px;
@@ -42,11 +43,12 @@ form{
 .btnspan{
     display: flex;
     justify-content: center;
+    width: 100%;
 
 }
 
 header input, select, button{
-    width: 70%;
+    width: 100%;
     margin: 4px auto;
     padding: 10px;
     border-radius: 20px;
@@ -68,4 +70,51 @@ ul :hover{
     transform-origin: 20px;
     background-color: green;
 
+}
+
+@media screen and (max-width:780px) {
+    
+header input, select, button{
+    width: 100%;
+    margin: 4px auto;
+    padding: 18px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+
+   
+}
+.btnspan{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+form{
+    width: 50%;
+    margin: auto;
+}
+.section{
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    gap: 0;
+}
+.section > ul > li{
+    font-size: small;
+    padding: 10px 0;
+    margin: 10px auto;
+    width: 90%;
+
+}
+.section > ul{
+    font-size: small;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+header input{
+    font-size: 10px;
+}
+    
 }
